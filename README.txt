@@ -1,0 +1,5 @@
+This program stimulates the dining philosophers problem. The number of philosophers can only be odd. The maximum number of philosophers is 27. The program takes in the following arguments. 
+./phil <numphil> <minthink> <maxthink> <mineat> <maxeat> <dist> <count>
+Here, <minthink> is the minimum think time for a philosopher, <maxthink> is the maximum think time; <mineat> is the minimum eating time, <maxeat> is the maximum eating time. The unit is millisecond. The max value of these parameters can be 60000 ms. The minimum value of these parameters can be 1 ms. <dist> is one of “uniform”, “exponential”. The think time and eat time for a philosopher is selected randomly according to the specified distribution.
+Each philosopher eats <count> times.
+Sample invocation: ./phil 5 500 1000 50 100 exponential 100
